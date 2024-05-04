@@ -45,4 +45,13 @@
     border-radius: 10rem;
     transition: all 0.4s;
   }
+  &--animated {
+    animation-name: moveInBottom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.75s;
+
+    //During the animation delay period, it uses the value at 0% of the animation.
+    animation-fill-mode: backwards;
+  }
 }

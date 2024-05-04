@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  //Thanks to the code below, we used box-sizing:border-box; property inside body element.
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+}
+html {
+  font-size: 62.5%;
+}

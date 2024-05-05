@@ -1,0 +1,11 @@
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  gap: 3rem;
+}
+.grid {
+  &--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

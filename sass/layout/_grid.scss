@@ -1,26 +1,44 @@
 .row {
   max-width: 114rem;
   margin: 0 auto;
-
   gap: 3rem;
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+  }
 }
 .grid {
   &--2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
   &--3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
   }
   &--4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
   &--footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
 }

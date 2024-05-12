@@ -1,5 +1,11 @@
 .composition {
   position: relative;
+  @include respond(tab-port) {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 7rem;
+  }
+
   &__photo {
     width: 55%;
     position: absolute;
@@ -11,14 +17,25 @@
     &-1 {
       left: 0;
       top: -2rem;
+      @include respond(tab-port) {
+        top: 0rem;
+        left: -5rem;
+      }
     }
     &-2 {
       right: 0;
       top: 2rem;
+      @include respond(tab-port) {
+        top: 0rem;
+        right: -5rem;
+      }
     }
     &-3 {
       top: 10rem;
       left: 20%;
+      @include respond(tab-port) {
+        top: -1rem;
+      }
     }
 
     &:hover {
@@ -30,5 +47,12 @@
   }
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
+  }
+  &-text {
+    @include respond(tab-port) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
   }
 }

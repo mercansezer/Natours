@@ -4,6 +4,13 @@
   font-size: 1.4rem;
   color: $color-grey-ligh-1;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+  @include respond(phone) {
+    padding: 8rem 2rem;
+  }
+
   &__logo {
     width: 15rem;
     height: auto;
@@ -11,12 +18,20 @@
     &-box {
       text-align: center;
       margin-bottom: 8rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 6rem;
+      }
     }
   }
   &__navigation {
     border-top: 1px solid $color-grey-dark;
-    width: 100%;
+    display: inline-block;
     padding-top: 2rem;
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
   &__list {
     list-style: none;
@@ -46,8 +61,13 @@
 
   //COPYRIGHT
   &__copyright {
+    display: inline-block;
     width: 100%;
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

@@ -20,13 +20,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
   &__left {
     width: 100%;
+    @include respond(tab-port) {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+    }
   }
   &__img {
     width: 100%;
     display: block;
+    @include respond(tab-port) {
+      width: 40%;
+    }
   }
   &__right {
     width: 100%;

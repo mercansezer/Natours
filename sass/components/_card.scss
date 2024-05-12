@@ -1,10 +1,9 @@
 .card {
   height: 50rem;
-
   //perspective CSS özelliği, 3D dönüşümün derinlik algısını kontrol eder. Değer olarak belirtilen uzaklık, dönüşümün nasıl algılanacağını belirler. Eğer perspective değeri çok küçükse, dönüşüm daha belirsiz ve düz olabilir, bu da görsel olarak hoş olmayan bir etki yaratabilir. Ancak, eğer daha büyük bir değer kullanılırsa, derinlik algısı artar ve dönüşüm daha gerçekçi ve estetik olarak daha hoş görünebilir. 150rem gibi büyük bir perspective değeri, dönüşümün daha geniş bir alanda gerçekleştiğini ve bu nedenle daha gerçekçi bir etki oluşturduğunu belirtir. Bu durumda, kartın 180 derece dönüşü daha akıcı ve görsel olarak daha hoş görünebilir.
   perspective: 150rem;
-
   position: relative;
+
   &__side {
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     overflow: hidden;

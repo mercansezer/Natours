@@ -17,6 +17,7 @@
     left: 0;
 
     //This code hides back side
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     &--front {

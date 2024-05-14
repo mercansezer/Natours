@@ -11,6 +11,10 @@
   padding-left: 9rem;
   font-size: $default-font-size;
 
+  @include respond(small-phone) {
+    display: block;
+  }
+
   @include respond(tab-port) {
     padding: 5rem;
     padding-left: 7rem;
@@ -35,6 +39,10 @@
       transform: skew(0);
     }
     position: relative;
+    @include respond(small-phone) {
+      margin: 0 auto;
+      margin-bottom: 3.5rem;
+    }
   }
   &__text {
     transform: skewX(12deg);
